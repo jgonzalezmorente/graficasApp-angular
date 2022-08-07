@@ -1,0 +1,12 @@
+<div class="d-block">
+    <canvas baseChart
+            [data]       = "_barChartData"
+            [options]    = "barChartOptions"
+            [plugins]    = "barChartPlugins"
+            [type]       = "barChartType">
+    </canvas>
+    <button (click)="randomize()"
+            class="btn btn-primary float-end">
+            Actualizar
+    </button>
+</div>

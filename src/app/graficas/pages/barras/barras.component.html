@@ -1,0 +1,18 @@
+<h1>Gráfica de Barras</h1>
+<hr>
+<div class="row">
+    <div class="col d-block">
+        <canvas baseChart
+                [data]       = "barChartData"
+                [options]    = "barChartOptions"
+                [plugins]    = "barChartPlugins"
+                [type]       = "barChartType"
+                (chartHover) = "chartHovered($event)"
+                (chartClick) = "chartClicked($event)">
+      </canvas>
+      <button (click)="randomize()"
+               class="btn btn-primary float-end">
+               Actualizar
+      </button>
+    </div>
+</div>
